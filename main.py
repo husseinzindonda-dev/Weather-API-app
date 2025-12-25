@@ -1,6 +1,7 @@
 #==== Block 1: Importing Statements ====
 # What modules does the program need to import to function correctly?
 import os
+import json
 import requests
 from dotenv import load_dotenv
 
@@ -45,6 +46,8 @@ def get_weather(lat, lon, api_key):
     }
     response = requests.get(weather_url, params=params)
     data = response.json()
+    print("\n=== FULL API RESPONSE ===")
+    print(json.dumps(data, indent=2))
     if 'main' in data and 'weather' in data:
         temperature = data['main']['temp']
         description = data['weather'][0]['description']
@@ -63,4 +66,5 @@ if __name__ == "__main__":
         weather_data = get_weather(lat, lon, API_KEY)
         temperature, description = weather_data
         print(f"Current temperature in {city_name}: {temperature}°C")
+
         print(f"Conditions: {description}")
