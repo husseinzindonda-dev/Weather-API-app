@@ -84,7 +84,7 @@ if __name__ == "__main__":
     else:
         weather_data = get_weather(lat, lon, API_KEY, units)
         temperature, description, humidity, wind_speed = weather_data
-        print(f"Current temperature in {city_name}: {weather_data['temp']}° {'C' if units == 'metric' else 'F'}")
+        print(f"Current temperature in {city_name}: {weather_data['temp']}°{'C' if units == 'metric' else 'F'}")
         print(f"Conditions: {weather_data['description']}")
         print(f"Humidity: {weather_data['humidity']}%")
         print(f"Wind Speed: {weather_data['wind_speed']} m/s")
