@@ -82,7 +82,7 @@ if __name__ == "__main__":
     if lat is None or lon is None:
         print(f"Error: Could not find coordinates for '{city_name}'.Please check the city name and try again.")
     else:
-        weather_data = get_weather(lat, lon, API_KEY)
+        weather_data = get_weather(lat, lon, API_KEY, units)
         temperature, description, humidity, wind_speed = weather_data
         print(f"Current temperature in {city_name}: {weather_data['temp']}°C")
         print(f"Conditions: {weather_data['description']}")
