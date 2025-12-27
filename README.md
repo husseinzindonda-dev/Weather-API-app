@@ -17,6 +17,7 @@ A clean, responsive web application built with Flask that displays current weath
 
 📁 Project Structure
 text
+
 weather-dashboard/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
