@@ -31,7 +31,7 @@ weather-dashboard/
 
 ├── static/               # Static assets
 
-│   └── style.css         # Stylesheet
+    └── style.css         # Stylesheet
 
 └── templates/            # HTML templates
 
