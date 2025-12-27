@@ -15,7 +15,7 @@ A clean, responsive web application built with Flask that displays current weath
 - **Metric/Imperial Units**: Supports both Celsius and Fahrenheit (planned enhancement)
 
 
-📁 Project Structure
+## 📁 Project Structure
 
 weather-dashboard/
 
@@ -65,7 +65,7 @@ CSS provides responsive styling
 
 Clean, user-friendly interface
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 Backend: Python, Flask, Requests
 
 Frontend: HTML5, CSS3, Jinja2 templating
@@ -74,7 +74,7 @@ API: OpenWeatherMap REST API
 
 Environment: python-dotenv for configuration management
 
-🔌 API Reference
+# 🔌 API Reference
 This project uses two OpenWeather API endpoints:
 
 Geocoding API: api.openweathermap.org/geo/1.0/direct
@@ -89,16 +89,13 @@ Fetches current weather data
 
 Required parameters: lat, lon, appid, units (metric/imperial)
 
-🧪 Testing
+# 🧪 Testing
 Test the application with various scenarios:
-
-bash
-# Valid cities
-London, New York, Tokyo, Paris
 
 # Edge cases
 "", "InvalidCityName123", cities with special characters
-🚧 Future Enhancements
+
+# 🚧 Future Enhancements
 Planned features and improvements:
 
 5-day weather forecast
