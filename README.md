@@ -16,19 +16,28 @@ A clean, responsive web application built with Flask that displays current weath
 
 
 📁 Project Structure
-text
 
 weather-dashboard/
 ├── app.py                 # Main Flask application
+
 ├── requirements.txt       # Python dependencies
+
 ├── .env                  # Environment variables (API key)
+
 ├── .gitignore            # Git ignore file
+
 ├── README.md             # This file
+
 ├── static/               # Static assets
+
 │   └── style.css         # Stylesheet
+
 └── templates/            # HTML templates
+
     ├── index.html        # Homepage with search form
+
     └── weather.html      # Weather results page
+    
 
 
 ## 🔧 How It Works
