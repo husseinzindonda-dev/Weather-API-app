@@ -51,6 +51,7 @@ Form submits to Flask backend via POST request
 python
 # Simplified flow:
 city → get_coordinates() → (lat, lon) → get_weather() → weather data → template
+
 3. API Integration
 Geocoding API: Converts city name to latitude/longitude
 
