@@ -2,15 +2,16 @@
 <html>
 <head>
     <title>Weather for {{ city }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Weather in {{ city }}</h1>
-    <div>
+    <div class="weather-card">
         <p>Temperature: {{ temp }}°C</p>
         <p>Description: {{ description }}</p>
         <p>Humidity: {{ humidity }}%</p>
         <p>Wind Speed: {{ wind_speed }} m/s</p>
     </div>
-    <a href="/">Check Another City</a>
+    <a href="/" style="display: inline-block; margin-top: 20px;">← Check another city</a>
 </body>
 </html>

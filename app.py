@@ -44,7 +44,13 @@ def get_weather(lat, lon, api_key, units='metric'):
     try:
         response = requests.get(weather_url, params=params, timeout=10)
         response.raise_for_status()
-        return response.json()
+        data = response.json()
+        return {
+            'temp': data['main']['temp'],
+            'humidity': data['main']['humidity'],
+            'description': data['weather'][0]['description'],
+            'wind_speed': data['wind']['speed']
+        }
     except requests.exceptions.RequestException as e:
         print(f"Error fetching weather data: {e}")
         return None
@@ -60,22 +66,27 @@ def weather():
 
     if not city:
         return "Please enter a city name.", 400
-    
+
     # Get coordinates
     lat, lon = get_coordinates(city, API_KEY)
     if lat is None or lon is None:
         return f"Could not find city: {city}.", 404
 
     # Call functions from main.py to get weather data
-    weather_data = get_weather(lat, lon, API_KEY, units='metric')
+    weather_data = get_weather(lat, lon, API_KEY, units='metric')  # Rename to weather_data
+
+    if weather_data is None:  # This is now the extracted dictionary
+        # No need to extract again - it's already done!
+        return f"Could not retrieve weather data for {city}.", 500
 
     # Pass to template
     return render_template('weather.html',
-                           city=city,
-                           temp=weather_data['temp'],
-                           description=weather_data['description'],
-                            humidity=weather_data['humidity'],
-                            wind_speed=weather_data['wind_speed'])
+                        city=city,
+                        temp=weather_data['temp'],  # Direct access
+                        description=weather_data['description'],
+                        humidity=weather_data['humidity'],
+                        wind_speed=weather_data['wind_speed'])
+
 
 
 
