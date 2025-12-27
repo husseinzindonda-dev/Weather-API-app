@@ -142,66 +142,7 @@ Historical weather data
 
 Multi-language support
 
-🤝 Contributing
-Contributions are welcome! Here's how you can help:
-
-Fork the repository
-
-Create a feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
-OpenWeatherMap for providing the weather API
-
-Flask community for excellent documentation
-
-All contributors and testers
-
-📞 Support
-For questions, suggestions, or issues:
-
-Open an issue on GitHub
-
-Check the FAQ section (coming soon)
-
-Built with ❤️ by [Your Name] • Live Demo • Report Bug • Request Feature
-
-text
-
-## 📝 Key Sections to Customize
-
-1. **Your Information**:
-   - Replace `yourusername` with your GitHub username
-   - Add your name at the bottom
-   - Update email/contact if desired
-
-2. **Screenshot**:
-   - Take a screenshot of your app
-   - Save as `static/screenshot.png`
-   - The markdown will display it automatically
-
-3. **Future Enhancements**:
-   - Check off items you've already implemented
-   - Add your own ideas
-
-4. **Live Demo** (if you deploy):
-   - Replace `#` with your deployment URL
-   - Services like Render provide URLs when you deploy
-
-## 🎨 Pro Tips for Your README
-
-- **Keep it updated** as you add features
-- **Add badges** from [shields.io](https://shields.io) for more visual appeal
-- **Include code examples** that show your best work
-- **Document known issues** honestly
-- **Add a "Built With" section** to showcase technologies
-
-This README demonstrates professional documentation skills that will impress potential employers or collaborators. Want help with any specific section or to add something unique to your project?
