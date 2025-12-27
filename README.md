@@ -14,46 +14,6 @@ A clean, responsive web application built with Flask that displays current weath
 - **Error Handling**: Graceful error messages for invalid cities or API issues
 - **Metric/Imperial Units**: Supports both Celsius and Fahrenheit (planned enhancement)
 
-## 🖼️ Screenshot
-
-![Weather Dashboard Screenshot](static/screenshot.png) *[Add screenshot later]*
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.9 or higher
-- OpenWeather API key (free tier)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/weather-dashboard.git
-   cd weather-dashboard
-Create virtual environment and install dependencies
-
-bash
-python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-# On Mac/Linux:
-source venv/bin/activate
-
-pip install -r requirements.txt
-Configure API key
-
-Get your free API key from OpenWeatherMap
-
-Create a .env file in the project root:
-
-text
-OPENWEATHER_API_KEY=your_api_key_here
-Run the application
-
-bash
-python app.py
-Open your browser and navigate to http://localhost:5000
 
 📁 Project Structure
 text
@@ -68,7 +28,9 @@ weather-dashboard/
 └── templates/            # HTML templates
     ├── index.html        # Homepage with search form
     └── weather.html      # Weather results page
-🔧 How It Works
+
+
+## 🔧 How It Works
 1. User Input
 User enters a city name in the search form
 
