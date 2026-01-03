@@ -91,7 +91,7 @@ Fetches current weather data
 Required parameters: lat, lon, appid, units (metric/imperial)
 
 # 🧪 Testing
-Test the application with various scenarios:
+Test the application with various cities:
 
 # Edge cases
 "", "InvalidCityName123", cities with special characters
